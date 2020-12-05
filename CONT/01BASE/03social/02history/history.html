@@ -138,7 +138,7 @@ a {
 	
 	</head>
 
-	<body bgcolor="#D7D4C5">
+	<body bgcolor="#D7D4C5" onkeydown="return false">
 		
 		<center>
 		
@@ -173,6 +173,32 @@ a {
 • <a href="">Historiografia<font color="grey">（Historiography）</font></a>🔒
 • <a href="">História do Mundo<font color="grey">（World History）</font></a>🔒
 • <a href="">História do Brasil<font color="grey">（History of Brazil）</font></a>🔒
+
+<FORM>
+<input type="button" value="➕" onClick="passWord()">
+</FORM>
+<script language="javascript">
+
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Insira sua Senha','Digite sua senha');
+while (testV < 3) {
+ if (!pass1) 
+  history.go(-1);
+ if (pass1.toLowerCase() == "getbook") {
+   alert('Logado !, Aguarde...');
+   window.open('https://demisart.github.io/biocompbr/CONT/01BASE/03social/02history/CONT/plus.html');
+   break;
+   } 
+  testV+=1;
+  var pass1 = 
+  prompt('Acesso Negado - Password Incorrecto.','Digite sua senha');
+ }
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+}
+</script>
 
 </font></pre>
 

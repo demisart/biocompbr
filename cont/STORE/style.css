@@ -1,0 +1,14 @@
+@font-face {
+    font-family: mainFont;
+    src: url(Andika-Regular.ttf);
+}
+
+body {
+    font-family: mainFont;
+}
+
+nav {
+    background-color: red;
+    color: white;
+    display: inline-block;
+}
